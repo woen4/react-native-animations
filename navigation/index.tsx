@@ -8,11 +8,11 @@ import * as React from "react";
 import LinkingConfiguration from "./LinkingConfiguration";
 import Channel from "../screens/Chanel/Chanel";
 import ChromeTabs from "../screens/Chrome";
-import Duolingo from "../screens/Duolingo";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import PhilzCoffee from "../screens/PhilzCoffee";
 import MaterialCommunityIcons from "@expo/vector-icons/build/MaterialCommunityIcons";
-import { Feather, Foundation } from "@expo/vector-icons";
+import { Entypo, Feather, Foundation } from "@expo/vector-icons";
+import Breathe from "../screens/Breathe";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -38,7 +38,6 @@ function StackNavigtor() {
         name="PhilzCoffee"
         component={PhilzCoffee}
         options={{
-          title: "Philz Coffee",
           tabBarIcon: ({ color, focused }) => (
             <Feather name="coffee" size={22} color="white" />
           ),
@@ -49,27 +48,27 @@ function StackNavigtor() {
         name="ChromeTabs"
         component={ChromeTabs}
         options={{
-          title: "Chrome Tabs",
           tabBarIcon: ({ color, focused }) => (
             <MaterialCommunityIcons name="tab" size={24} color="white" />
           ),
         }}
       />
       <Tab.Screen
-        name="Channel"
+        name="Chanel"
         component={Channel}
         options={{
-          title: "Chanel",
           tabBarIcon: ({ color, focused }) => (
             <Foundation name="list" size={24} color="white" />
           ),
         }}
       />
       <Tab.Screen
-        name="Duolingo"
-        component={Duolingo}
+        name="Breathe"
+        component={Breathe}
         options={{
-          title: "Duolingo",
+          tabBarIcon: ({ color, focused }) => (
+            <Entypo name="air" size={24} color="white" />
+          ),
         }}
       />
     </Tab.Navigator>

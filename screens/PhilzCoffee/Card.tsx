@@ -6,7 +6,7 @@ import Button from "./components/Button";
 import CardHeader from "./components/CardHeader";
 
 const { width } = Dimensions.get("window");
-export const CARD_HEIGHT = (width * 1564) / 974;
+export const CARD_HEIGHT = width * 1.25;
 const styles = StyleSheet.create({
   container: {
     width,
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "Nunito-Bold",
-    fontSize: 28,
+    fontSize: 20,
     textAlign: "center",
     color: "#432406",
     marginBottom: 16,
@@ -45,7 +45,6 @@ const Card = ({ product: { color1, title, subtitle } }: CardProps) => {
         }}
       >
         <View>
-          <CardHeader />
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.subtitle}>{subtitle}</Text>
         </View>

@@ -8,7 +8,7 @@ import Animated, {
 import { products } from "./Model";
 
 const { width } = Dimensions.get("window");
-const SIZE = 150;
+const SIZE = 100;
 const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
@@ -45,7 +45,11 @@ const Products = ({ x }: ProductsProps) => {
           <Animated.View key={index} style={[styles.container, style]}>
             <Image
               source={product.picture}
-              style={{ width: SIZE, height: SIZE * product.aspectRatio }}
+              style={{
+                marginTop: 50,
+                width: SIZE,
+                height: SIZE * product.aspectRatio,
+              }}
             />
           </Animated.View>
         );
