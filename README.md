@@ -1,7 +1,8 @@
 <h1>React Native Animations</h1>
-<h3>A set of delightful animations</h3>
+<span>A set of delightful animations</span>
 <br/>
-<h3>Made using:</h3>
+<br/>
+<span>Made using:</span>
 <ul>
   <li><a href="https://reactnative.dev/">React Native</a></li>
   <li><a href="https://expo.dev/">Expo</a></li>
@@ -9,7 +10,6 @@
 </ul>
 <br />
 
-_____
 <br />
 <h2>Preview: </h2>
 <br />
