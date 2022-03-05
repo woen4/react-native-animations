@@ -8,16 +8,17 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "test": "jest"
   },
   "dependencies": {
+    "@expo-google-fonts/nunito": "^0.2.2",
     "@expo/vector-icons": "^12.0.0",
     "@react-navigation/bottom-tabs": "^6.0.5",
+    "@react-navigation/material-bottom-tabs": "^6.1.1",
+    "@react-navigation/material-top-tabs": "^6.1.1",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
+    "@react-navigation/stack": "^6.1.1",
     "expo": "~44.0.0",
     "expo-asset": "~8.4.4",
     "expo-constants": "~13.0.0",
@@ -29,17 +30,36 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-pager-view": "5.4.9",
+    "react-native-paper": "^4.11.2",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-redash": "^16.2.3",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
-    "react-native-web": "0.17.1"
+    "react-native-svg": "12.1.1",
+    "react-native-tab-view": "^3.1.1",
+    "react-native-vector-icons": "^9.1.0",
+    "react-native-web": "0.17.1",
+    "react-native-webview": "11.15.0",
+    "responsive-native": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-native": "^9.0.0",
+    "@types/jest": "^27.4.0",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
-    "jest-expo": "~44.0.1",
-    "jest": "^26.6.3",
-    "react-test-renderer": "17.0.1",
+    "babel-jest": "^27.4.6",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "jest": "^26.6.1",
+    "jest-expo": "^44.0.0",
+    "react-test-renderer": "17",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.1.0",
     "typescript": "~4.3.5"
   },
   "private": true
